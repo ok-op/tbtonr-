@@ -1,9 +1,0 @@
-name = "telegram-bot-worker"
-type = "javascript"
-
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
-workers_dev = true
-compatibility_date = "2024-02-20"
-
-[vars]
-BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
