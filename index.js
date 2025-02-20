@@ -121,6 +121,10 @@ async function getMovieDetails(url) {
 // Express Route
 app.get('/', (req, res) => res.send('Bot is Running!'));
 
-// Start Bot & Server
-bot.launch();
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Start Express server
+module.exports = app;
+
+// Start Telegram bot polling
+bot.launch().then(() => {
+    console.log('🤖 Bot is running...');
+});
